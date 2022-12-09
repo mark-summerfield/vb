@@ -537,7 +537,8 @@ class Model:
 
     def make_manifest(self):
         with open('MANIFEST', 'wt', encoding='utf-8') as file:
-            file.write(f'{self.appname}.vala\n\n{LOCAL_INI}\n\nst.sh\n')
+            file.write(f'{self.appname}.vala\n\n{LOCAL_INI}\n\n'
+                       'README.md\n\nst.sh\n')
 
 
     def make_readme(self):
